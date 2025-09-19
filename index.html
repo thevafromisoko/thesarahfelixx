@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chi Doe — Unisex Model & Collaborator (Demo)</title>
+  <meta name="description" content="Demo portfolio for Chi Doe — unisex model. Editorial, runway, and product collaborations. Demo built by Plae Creative Studio." />
+  <meta name="author" content="Plae Creative Studio / Paschal" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chi Doe — Unisex Model & Collaborator (Demo)" />
+  <meta property="og:description" content="Demo portfolio for Chi Doe — unisex model. Editorial, runway, and product collaborations." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=1200&q=80&auto=format&fit=crop&crop=faces" />
+  <meta property="og:type" content="profile" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Chi Doe — Unisex Model (Demo)" />
+  <meta name="twitter:description" content="Demo portfolio for Chi Doe — unisex model. Editorial, runway, and product collaborations." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=1200&q=80&auto=format&fit=crop&crop=faces" />
+
+  <!-- JSON-LD Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Chi Doe",
+    "url":"https://yourdomain.com",
+    "jobTitle":"Model",
+    "sameAs":[
+      "https://www.instagram.com/chi_doe",
+      "https://www.tiktok.com/@chi_doe"
+    ],
+    "image":"https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=1200&q=80&auto=format&fit=crop&crop=faces"
+  }
+  </script>
+
+  <!-- Basic fonts + minimal reset -->
+  <style>
+    /* Minimal reset + system fonts */
+    :root{
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --accent:#111827; /* change to brand accent */
+      --accent-2:#1d4ed8;
+      --max-w:1100px;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#0f172a; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; line-height:1.5}
+    img{max-width:100%; display:block}
+    a{color:var(--accent); text-decoration:none}
+    .container{max-width:var(--max-w); margin:0 auto; padding:28px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:10px 0}
+    .brand{display:flex; gap:12px; align-items:center}
+    .brand .logo{width:52px; height:52px; border-radius:10px; overflow:hidden; box-shadow:0 6px 20px rgba(8,15,40,0.06)}
+    .brand h1{font-size:18px; margin:0; font-weight:800; letter-spacing:-0.2px}
+    .nav{display:flex; gap:12px; align-items:center}
+    .nav a{font-weight:600; color:#0b1220}
+    .hero{display:grid; grid-template-columns:1fr 460px; gap:28px; align-items:center; margin-top:18px}
+    @media (max-width:920px){ .hero{grid-template-columns:1fr; text-align:center} .nav{display:none} }
+    .hero-left .kicker{display:inline-block; background:#eef2ff; color:var(--accent-2); padding:8px 12px; border-radius:999px; font-weight:700; margin-bottom:12px}
+    .hero-left h2{font-size:clamp(28px,6vw,44px); margin:0 0 10px}
+    .hero-left p.lead{color:var(--muted); margin:0 0 18px}
+    .btn{background:var(--accent-2); color:white; padding:10px 16px; border-radius:12px; font-weight:700; border:0; cursor:pointer}
+    .btn.ghost{background:transparent; color:var(--accent-2); border:2px solid rgba(29,78,216,0.12)}
+    .hero-right{border-radius:16px; overflow:hidden; box-shadow:0 20px 48px rgba(2,6,23,0.08)}
+    .stats{display:flex; gap:10px; margin-top:14px}
+    .stat{background:#f8fafc; padding:8px 12px; border-radius:10px; font-weight:700}
+    section{padding:44px 0; border-top:1px solid #f1f5f9}
+    h3{margin-top:0}
+    .about-grid{display:grid; grid-template-columns:1fr 320px; gap:20px; align-items:start}
+    @media (max-width:920px){ .about-grid{grid-template-columns:1fr} .aside-right{order:-1} }
+    .gallery{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px}
+    @media (max-width:920px){ .gallery{grid-template-columns:repeat(2, 1fr)} }
+    .polaroids{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:10px}
+    @media (max-width:920px){ .polaroids{grid-template-columns:repeat(2,1fr)} }
+    .card{background:#fff; padding:14px; border-radius:12px; box-shadow:0 8px 28px rgba(10,20,50,0.04)}
+    .collab-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:760px){ .collab-grid{grid-template-columns:1fr} }
+    form{display:grid; gap:8px}
+    input,textarea,select{padding:10px; border-radius:10px; border:1px solid #e6eef2; font-size:15px}
+    input:focus,textarea:focus{outline:0; box-shadow:0 8px 24px rgba(29,78,216,0.06); border-color:rgba(29,78,216,0.18)}
+    footer{padding:28px 0; text-align:center; color:var(--muted)}
+    .small{font-size:13px; color:var(--muted)}
+    .tag{display:inline-block; background:#f2f8ff; color:var(--accent-2); padding:6px 10px; border-radius:999px; font-weight:700; font-size:13px}
+    /* Lightbox styles */
+    .lightbox{position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(4,6,12,0.7); z-index:9999; opacity:0; pointer-events:none; transition:opacity .2s ease}
+    .lightbox.open{opacity:1; pointer-events:auto}
+    .lightbox img{max-width:92%; max-height:86%; border-radius:12px; box-shadow:0 30px 80px rgba(3,7,18,0.6)}
+    /* subtle micro animations */
+    .fade-up{opacity:0; transform:translateY(10px); transition:all .6s cubic-bezier(.2,.9,.2,1)}
+    .fade-up.visible{opacity:1; transform:none}
+    /* utility */
+    .row{display:flex; gap:12px; align-items:center}
+    .center{display:flex; align-items:center; justify-content:center}
+  </style>
+</head>
+<body>
+
+  <div class="container" id="top">
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo">
+          <!-- small fashion thumbnail -->
+          <img src="https://images.unsplash.com/photo-1540496905034-1b8fa5c2f4b6?w=800&q=80&auto=format&fit=crop&crop=faces" alt="Plae Creative Studio logo demo" />
+        </div>
+        <div>
+          <h1>Sarah Felix</h1>
+          <div class="small">Unisex Model • Demo Portfolio</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#digitals">Digitals</a>
+        <a href="#collabs">Collaborations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <div class="kicker">Unisex • Editorial • Commercial</div>
+        <h2 id="hero-title">A modern unisex model — editorial to commercial</h2>
+        <p class="lead">Versatile, confident, and camera-ready. This demo shows the look & experience we can craft for Chi — imagine your images here, in this exact layout.</p>
+        <div class="row" style="margin-top:10px">
+          <a class="btn" href="#contact">Book / Enquire</a>
+          <a class="btn ghost" href="epk-demo.pdf" download style="padding:9px 14px">Download EPK</a>
+        </div>
+
+        <div class="stats" style="margin-top:16px" aria-hidden="true">
+          <div class="stat">Height 180 cm</div>
+          <div class="stat">Chest 86 cm</div>
+          <div class="stat">Shoe EU 41</div>
+        </div>
+
+        <p class="small" style="margin-top:12px">Bookings & representation: <a href="mailto:bookings@plaestudio.com">bookings@plaestudio.com</a></p>
+      </div>
+
+      <div class="hero-right" role="img" aria-label="Hero fashion image">
+        <!-- Unsplash hero image with srcset for responsive sizes -->
+        <picture>
+          <source type="image/webp" srcset="
+            https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=480&q=70&auto=format&fit=crop&crop=faces&fm=webp 480w,
+            https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=820&q=80&auto=format&fit=crop&crop=faces&fm=webp 820w,
+            https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=1200&q=80&auto=format&fit=crop&crop=faces&fm=webp 1200w" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=820&q=80&auto=format&fit=crop&crop=faces" alt="Editorial unisex model - demo hero" />
+        </picture>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="about-grid">
+        <div>
+          <h3 id="about-heading">About</h3>
+          <p><strong>Short bio:</strong> Chi Doe is a Lagos-based unisex model whose work spans editorial, runway and commercial projects. Chi combines an androgynous edge with classic presentation — ideal for lookbooks, campaigns, and product hero shots.</p>
+
+          <p><strong>Long bio:</strong> Chi started in modelling with small editorials and lookbook shoots. With a natural command of the camera, Chi brings direction-friendly energy and a crisp presence for product and footwear shoots. This demo site showcases the kind of visual identity we can build — swap in her photos and the site becomes her official portfolio.</p>
+
+          <h4 style="margin-top:12px">Measurements & details</h4>
+          <ul class="small">
+            <li>Height: 180 cm</li>
+            <li>Bust/Chest: 86 cm • Waist: 68 cm • Hips: 92 cm</li>
+            <li>Shoe: EU 41 • Hair: Dark brown • Eyes: Brown</li>
+          </ul>
+        </div>
+
+        <aside class="card aside-right">
+          <!-- portrait from pexels for agency feel -->
+          <picture>
+            <source type="image/webp" srcset="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?w=600&auto=compress&cs=tinysrgb&h=800&fit=crop&fm=webp 600w" />
+            <img loading="lazy" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?w=600&auto=compress&cs=tinysrgb&h=800&fit=crop" alt="Portrait demo — neutral studio shot" style="border-radius:10px; margin-bottom:12px" />
+          </picture>
+          <p class="small">Available for local & international bookings. Model release required for commercial usage. EPK available on request.</p>
+          <p style="margin-top:10px"><a class="btn" href="#contact">Request Booking</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- GALLERY / LOOKBOOK -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <h3 id="gallery-heading">Lookbook / Gallery</h3>
+      <p class="small">Editorial, streetwear and product imagery — curated to communicate range and aesthetic.</p>
+
+      <div class="gallery" id="gallery-grid" aria-live="polite">
+        <!-- 8 curated fashion images from Unsplash (mix of genders, looks) -->
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Editorial look — tailored coat and sneakers" data-large="https://images.unsplash.com/photo-1520975914-1c3b1f7b685e?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Full-length editorial portrait" data-large="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1534769200273-1fd1b1493b6a?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Streetwear look — urban backdrop" data-large="https://images.unsplash.com/photo-1534769200273-1fd1b1493b6a?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1520975885429-93a4a7e6f036?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Androgynous styling — editorial close-up" data-large="https://images.unsplash.com/photo-1520975885429-93a4a7e6f036?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1514996937319-344454492b37?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Classic studio portrait" data-large="https://images.unsplash.com/photo-1514996937319-344454492b37?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Fashion editorial — motion" data-large="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Product hero — footwear detail" data-large="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+        <figure class="card fade-up" tabindex="0">
+          <img data-src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=900&q=80&auto=format&fit=crop&crop=faces" alt="Styled look — minimalist" data-large="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1600&q=80&auto=format&fit=crop&crop=faces" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- DIGITIALS / POLAROIDS -->
+    <section id="digitals" aria-labelledby="digitals-heading">
+      <h3 id="digitals-heading">Digitals / Polaroids</h3>
+      <p class="small">Agency-style digitals — neutral background, minimal retouch. Keep these for castings.</p>
+
+      <div class="polaroids">
+        <div class="card center">
+          <img data-src="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?w=800&auto=compress&cs=tinysrgb&h=1200&fit=crop" alt="Neutral front digital" data-large="https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?w=2000&auto=compress&cs=tinysrgb&h=3000&fit=crop" />
+        </div>
+        <div class="card center">
+          <img data-src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?w=800&auto=compress&cs=tinysrgb&h=1200&fit=crop" alt="3/4 digital" data-large="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?w=2000&auto=compress&cs=tinysrgb&h=3000&fit=crop" />
+        </div>
+        <div class="card center">
+          <img data-src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?w=800&auto=compress&cs=tinysrgb&h=1200&fit=crop" alt="Profile digital" data-large="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?w=2000&auto=compress&cs=tinysrgb&h=3000&fit=crop" />
+        </div>
+        <div class="card center">
+          <img data-src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?w=800&auto=compress&cs=tinysrgb&h=1200&fit=crop" alt="Full-length digital" data-large="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?w=2000&auto=compress&cs=tinysrgb&h=3000&fit=crop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLABORATIONS -->
+    <section id="collabs" aria-labelledby="collabs-heading">
+      <h3 id="collabs-heading">Collaborations & Projects</h3>
+      <p class="small">Showcase product & campaign pairings. Use this to demonstrate how Chi elevates product storytelling.</p>
+
+      <div class="collab-grid">
+        <div class="card">
+          <h4>Plae Studio — Shoe Edit (demo)</h4>
+          <p class="small">Styled product shoot pairing footwear with editorial looks. Goal: online product pages + social reels.</p>
+          <picture>
+            <source type="image/webp" srcset="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600&q=70&auto=format&fit=crop&fm=webp 600w" />
+            <img data-src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=900&q=80&auto=format&fit=crop" alt="Product collaboration — footwear" />
+          </picture>
+          <p class="small" style="margin-top:8px"><strong>Deliverables:</strong> 8 hero images, 2 reels, BTS carousel. Usage: social + e-commerce.</p>
+        </div>
+
+        <div class="card">
+          <h4>Capsule Lookbook — Seasonal (demo)</h4>
+          <p class="small">Editorial capsule built around a neutral palette — aim for magazine-style grading and shop-the-look features.</p>
+          <picture>
+            <source type="image/webp" srcset="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=70&auto=format&fit=crop&fm=webp 600w" />
+            <img data-src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=900&q=80&auto=format&fit=crop" alt="Editorial capsule demo" />
+          </picture>
+          <p class="small" style="margin-top:8px"><strong>Role:</strong> Model & product hero. Highlight: adaptable looks for male & female audiences.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h3 id="contact-heading">Contact & Booking</h3>
+      <div class="about-grid">
+        <div class="card">
+          <h4>Booking form</h4>
+          <!-- Replace FORM_ENDPOINT with your Formspree or serverless form endpoint -->
+          <form action="https://formspree.io/f/FORM_ENDPOINT" method="POST" aria-label="Booking form">
+            <label class="small" for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name or brand" />
+
+            <label class="small" for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" />
+
+            <label class="small" for="project">Project brief</label>
+            <textarea id="project" name="project" rows="4" placeholder="Short description of the project / campaign"></textarea>
+
+            <label class="small" for="dates">Proposed dates</label>
+            <input id="dates" name="dates" placeholder="e.g., 2025-10-02 to 2025-10-04" />
+
+            <label class="small" for="budget">Budget (optional)</label>
+            <select id="budget" name="budget">
+              <option value="">Prefer not to say</option>
+              <option value="under-200">Under $200</option>
+              <option value="200-500">$200–$500</option>
+              <option value="500-2000">$500–$2,000</option>
+              <option value="2000+">$2,000+</option>
+            </select>
+
+            <!-- honeypot to trap spam bots -->
+            <input type="text" name="_gotcha" style="display:none" />
+
+            <p class="small">Or email directly: <a href="mailto:bookings@plaestudio.com">bookings@plaestudio.com</a></p>
+
+            <button type="submit" class="btn">Send enquiry</button>
+          </form>
+        </div>
+
+        <aside class="card">
+          <h4>Booking checklist</h4>
+          <ul class="small">
+            <li>Moodboard / references (Pinterest link)</li>
+            <li>Dates & location</li>
+            <li>Usage rights (social / print / commercial)</li>
+            <li>Wardrobe / H&MU plan</li>
+            <li>Budget / payment terms</li>
+          </ul>
+
+          <h4 style="margin-top:10px">Model release</h4>
+          <p class="small">Signed model release required. Example: "I grant permission to use photos & video for promotional purposes worldwide in perpetuity."</p>
+
+          <p style="margin-top:12px"><a class="btn ghost" href="epk-demo.pdf" download>Download Demo EPK</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p class="small">© <span id="year"></span> Chi Doe • Demo portfolio by Plae Creative Studio</p>
+      <p class="small">Privacy note: contact data used only for booking enquiries.</p>
+    </footer>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true" aria-label="Image preview">
+    <button id="lb-close" aria-label="Close preview" style="position:absolute; top:18px; right:20px; z-index:10001; background:transparent; border:0; color:white; font-size:20px">✕</button>
+    <img alt="expanded preview" id="lb-image" src="" />
+  </div>
+
+  <!-- Scripts: lazy-load, lightbox, reveal on scroll, smooth-scroll -->
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Lazy-load images + reveal on scroll
+    (function(){
+      const lazyImgs = Array.from(document.querySelectorAll('img[data-src]'));
+      const reveal = (el) => el.classList.add('visible');
+
+      if('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              const img = entry.target;
+              img.src = img.dataset.src;
+              img.onload = () => img.removeAttribute('data-src');
+              obs.unobserve(img);
+            }
+            if(entry.isIntersecting){
+              const parent = entry.target.closest('.fade-up');
+              if(parent) parent.classList.add('visible');
+            }
+          });
+        }, {rootMargin: '160px'});
+        lazyImgs.forEach(i => io.observe(i));
+      } else {
+        // fallback: eager load
+        lazyImgs.forEach(i => i.src = i.dataset.src);
+        document.querySelectorAll('.fade-up').forEach(e => e.classList.add('visible'));
+      }
+    })();
+
+    // Lightbox
+    (function(){
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lb-image');
+      const closeBtn = document.getElementById('lb-close');
+
+      function openLightbox(src, alt){
+        lbImg.src = src;
+        lbImg.alt = alt || 'preview';
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeLightbox(){
+        lb.classList.remove('open');
+        lbImg.src = '';
+        lb.setAttribute('aria-hidden','true');
+        document.body.style.overflow = '';
+      }
+
+      // click handlers
+      document.addEventListener('click', function(e){
+        const img = e.target.closest('img');
+        if(!img) return;
+        const large = img.dataset.large || img.src || img.getAttribute('src');
+        const inGallery = img.closest('#gallery-grid') || img.closest('.polaroids') || img.closest('.collab-grid');
+        if(inGallery){
+          e.preventDefault();
+          openLightbox(large, img.alt);
+        }
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lb.addEventListener('click', function(e){
+        if(e.target === lb) closeLightbox();
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') closeLightbox();
+      });
+    })();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          target.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
